@@ -1,4 +1,4 @@
-// Michael Anglemier
+//Michael Anglemier, following "Bug Free Productions" tutorial
 // 1/23/2024
 
 using System.Collections;
@@ -9,17 +9,25 @@ using UnityEngine.SceneManagement;
 public class CanvasNav : MonoBehaviour
 {
     // Vars
-    [SerializeField]
+    //[SerializeField]
 
     //Methods
-    public void LoadNextScene(int aIDX)
+    public void LoadNextScene()
     {
-        SceneManager.LoadScene(aIDX);
+       
+
+        GameManager.Instance.NextScene();
+
+        //SceneManager.LoadScene(aIDX);
     }
 
     public void LoadStartScreen()
     {
-        LoadNextScene(0);
+        //GameManager.Instance.ResetScore();
+
+        //LoadNextScene(0);
+
+        GameManager.Instance.StartScene();
     }
 
     //Accessors

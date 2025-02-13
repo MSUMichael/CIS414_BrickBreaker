@@ -374,11 +374,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3547726763748885171, guid: 6a17f5f6d7dc0614e8c663ec845220bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547726763748885171, guid: 6a17f5f6d7dc0614e8c663ec845220bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7590400536977618666}
+    - target: {fileID: 3547726763748885171, guid: 6a17f5f6d7dc0614e8c663ec845220bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a17f5f6d7dc0614e8c663ec845220bb, type: 3}
+--- !u!114 &7590400536977618666 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7925701696001182197, guid: 6a17f5f6d7dc0614e8c663ec845220bb, type: 3}
+  m_PrefabInstance: {fileID: 7590400536977618665}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24405ca299e3a45a1d0449911ad8ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
