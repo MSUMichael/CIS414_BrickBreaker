@@ -33,7 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3337923967850489701}
+  - {fileID: 2391272727327702627}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2453557947849598267
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31c31dd27f387414daaaa72dd4042184, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,8 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitsToBreak: 10
   pointValue: 1
-  hit_PS: {fileID: 5161258714187873195}
---- !u!1001 &4389546658176670654
+  hit_PS: {fileID: 5250432720835797677}
+--- !u!1001 &3717717800367702712
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -179,13 +179,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f253888a54aa504ebe10c98758beb15, type: 3}
---- !u!4 &3337923967850489701 stripped
+--- !u!4 &2391272727327702627 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1348965820002352347, guid: 3f253888a54aa504ebe10c98758beb15, type: 3}
-  m_PrefabInstance: {fileID: 4389546658176670654}
+  m_PrefabInstance: {fileID: 3717717800367702712}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &5161258714187873195 stripped
+--- !u!198 &5250432720835797677 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 8884111237505425429, guid: 3f253888a54aa504ebe10c98758beb15, type: 3}
-  m_PrefabInstance: {fileID: 4389546658176670654}
+  m_PrefabInstance: {fileID: 3717717800367702712}
   m_PrefabAsset: {fileID: 0}

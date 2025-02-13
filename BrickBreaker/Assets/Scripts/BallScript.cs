@@ -15,6 +15,10 @@ public class BallScript : MonoBehaviour
 
     [SerializeField] protected int damage = 1;
 
+    //Added sound effect when the ball bounces
+    [SerializeField] protected AudioSource audioSource;
+    [SerializeField] protected AudioClip audioClip;
+    [SerializeField] protected float pitchVariance = 0.15f;
 
     //Methods
     private void OnEnable()
@@ -49,10 +53,31 @@ public class BallScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         BreakableBrick bb = collision.gameObject.GetComponent<BreakableBrick>();
-        
+
+        PlaySoundWithVariance();
+
         if (bb != null)
         {
             bb.Break(damage);
+        }
+    }
+
+
+    //This allows for subtle pitch variance on sound play so the sound isn't identical everytime
+    //after discovering it I apply it to most repeated sounds just because its easy and makes them
+    //sound much better if you have to listen to them 30 times rapidly
+    //
+    public void PlaySoundWithVariance()
+    {
+        if (audioSource != null && audioClip != null)
+        {
+            audioSource.clip = audioClip;
+            audioSource.pitch = 1.0f + Random.Range(-pitchVariance, pitchVariance);
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or AudioClip is not assigned.");
         }
     }
 
